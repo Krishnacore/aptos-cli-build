@@ -27,7 +27,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: Build CLI
-        run: build.sh
+        run: ./build.sh
       - name: Upload Binary
         uses: actions/upload-artifact@v3
         with:
@@ -48,7 +48,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: Build CLI
-        run: build.sh
+        run: ./build.sh
       - name: Upload Binary
         uses: actions/upload-artifact@v3
         with:
