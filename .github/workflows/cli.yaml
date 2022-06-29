@@ -26,8 +26,9 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 2
+          path: builder
       - name: Build CLI
-        run: ./build.sh
+        run: ./builder/build.sh
       - name: Upload Binary
         uses: actions/upload-artifact@v3
         with:
@@ -47,8 +48,9 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 2
+          path: builder
       - name: Build CLI
-        run: ./build.sh
+        run: ./builder/build.sh
       - name: Upload Binary
         uses: actions/upload-artifact@v3
         with:
